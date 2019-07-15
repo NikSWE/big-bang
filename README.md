@@ -1,1 +1,1 @@
-![header-image](.github_assets/big-bang-header.png)
+![header-image](.github_assets/big-bang-header.jpg)
