@@ -1,16 +1,15 @@
 {
   "casks": [
     "4k-video-downloader",
+    "abricotine",
     "adobe-creative-cloud",
     "adobe-creative-cloud-cleaner-tool",
     "android-file-transfer",
+    "aware",
     "deluge",
     "discord",
-    "github",
     "google-chrome",
     "microsoft-office",
-    "opera",
-    "overflow",
     "platypus",
     "pomotodo",
     "popsql",
@@ -19,10 +18,9 @@
     "teamviewer",
     "telegram-desktop",
     "the-unarchiver",
-    "typora",
     "visual-studio-code",
     "vlc",
     "whatsapp",
-    "yt-music"
+    "zettlr"
   ]
 }
