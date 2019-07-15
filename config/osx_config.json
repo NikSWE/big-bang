@@ -33,5 +33,14 @@
     "python",
     "webp"
   ],
-  "taps": ["dart-lang/dart"]
+  "taps": ["dart-lang/dart"],
+  "npm": [
+    "create-react-app",
+    "hexo-cli",
+    "markdown-toc",
+    "serve",
+    "firebase-tools",
+    "gatsby-cli"
+  ],
+  "pip": ["emoji", "mypy", "pyinstaller", "yapf", "simple-colors"]
 }
