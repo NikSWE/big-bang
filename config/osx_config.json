@@ -9,6 +9,7 @@
     "deluge",
     "discord",
     "google-chrome",
+    "java",
     "microsoft-office",
     "platypus",
     "pomotodo",
@@ -22,5 +23,15 @@
     "vlc",
     "whatsapp",
     "zettlr"
-  ]
+  ],
+  "formulae": [
+    "coreutils",
+    "dart",
+    "git",
+    "md5sha1sum",
+    "node",
+    "python",
+    "webp"
+  ],
+  "taps": ["dart-lang/dart"]
 }
