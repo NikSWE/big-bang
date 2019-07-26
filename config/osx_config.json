@@ -1,7 +1,6 @@
 {
   "casks": [
-    "4k-video-downloader",
-    "abricotine",
+    "1clipboard",
     "adobe-creative-cloud",
     "adobe-creative-cloud-cleaner-tool",
     "android-file-transfer",
@@ -10,7 +9,6 @@
     "discord",
     "google-chrome",
     "java",
-    "microsoft-office",
     "pomotodo",
     "popsql",
     "postman",
@@ -28,19 +26,29 @@
     "coreutils",
     "dart",
     "git",
+    "heroku",
     "md5sha1sum",
     "node",
-    "python",
-    "webp"
+    "python"
   ],
-  "taps": ["dart-lang/dart"],
+  "home_directory": [
+    "my_notes",
+    "my_repo/dart_projects/sandbox",
+    "my_repo/flutter_projects/sandbox",
+    "my_repo/node_projects/sandbox",
+    "my_repo/pwa_projects/sandbox",
+    "my_repo/python_projects/sandbox",
+    "my_repo/react_projects/sandbox",
+    "my_repo/sandbox"
+  ],
   "npm": [
     "create-react-app",
+    "firebase-tools",
+    "gatsby-cli",
     "hexo-cli",
     "markdown-toc",
-    "serve",
-    "firebase-tools",
-    "gatsby-cli"
+    "serve"
   ],
-  "pip": ["emoji", "mypy", "pyinstaller", "yapf", "simple-colors"]
+  "pip": ["emoji", "mypy", "pyinstaller", "requests", "simple-colors", "yapf"],
+  "taps": ["dart-lang/dart", "heroku/brew"]
 }
