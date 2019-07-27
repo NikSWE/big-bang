@@ -45,12 +45,12 @@ def osx_installer(config_file_path):
     # install all npm packages
     # npm packages are installed in `~/.node_modules`
     # this prevents using `sudo` cmd for every install
-    subprocess.call("mkdir", "{}/.node_modules".format(str(pathlib.Path.home())))
+    subprocess.call(["mkdir", "{}/.node_modules".format(str(pathlib.Path.home()))])
     colors.print_yellow("created {}/.node_modules".format(str(pathlib.Path.home())))
 
     # change npm prefix
-    subprocess.call("npm", "config", "set", "prefix",
-                    "{}/.node_modules".format(str(pathlib.Path.home())))
+    subprocess.call(["npm", "config", "set", "prefix",
+                    "{}/.node_modules".format(str(pathlib.Path.home()))])
 
     for package in config_data["npm"]:
         subprocess.call(["npm", "install", "--global", package])
