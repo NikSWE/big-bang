@@ -19,14 +19,14 @@ BLUE='\033[0;34m'   # New Stage
 # print current stage [1]
 echo "${BLUE}1] setting up the environment${RESET}"
 
-# downloading `Xcode command line tools`
-xcode-select --install
-
 # downloading `homebrew`
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # updating `homebrew`
 brew update
+
+# disable `homebrew` updating for entire installation process
+export HOMEBREW_NO_AUTO_UPDATE=1
 
 # downloading `python 3.x.x`
 brew install python

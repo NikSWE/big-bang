@@ -32,7 +32,7 @@ def osx_installer(config_file_path):
     colors.print_blue("installing all the casks")
     # install all brew casks
     for cask in config_data["casks"]:
-        subprocess.call(["brew", "casks", "install", cask])
+        subprocess.call(["brew", "cask", "install", cask])
     colors.print_green("installed all casks successfully")
 
     colors.print_blue("installing all the pip modules")
@@ -45,12 +45,12 @@ def osx_installer(config_file_path):
     # install all npm packages
     # npm packages are installed in `~/.node_modules`
     # this prevents using `sudo` cmd for every install
-    subprocess.call("mkdir", "{}/.node_modules".format(pathlib.Path.home()))
-    colors.print_yellow("created {}/.node_modules".format(pathlib.Path.home()))
+    subprocess.call("mkdir", "{}/.node_modules".format(str(pathlib.Path.home())))
+    colors.print_yellow("created {}/.node_modules".format(str(pathlib.Path.home())))
 
     # change npm prefix
     subprocess.call("npm", "config", "set", "prefix",
-                    "{}/.node_modules".format(pathlib.Path.home()))
+                    "{}/.node_modules".format(str(pathlib.Path.home())))
 
     for package in config_data["npm"]:
         subprocess.call(["npm", "install", "--global", package])
@@ -60,5 +60,5 @@ def osx_installer(config_file_path):
     # create home directory structure
     for entry in config_data["home_directory"]:
         subprocess.call(
-            ["mkdir", "-p", "{}/{}".format(pathlib.Path.home(), entry)])
+            ["mkdir", "-p", "{}/{}".format(str(pathlib.Path.home()), entry)])
     colors.print_green("successfully created all the directories")
