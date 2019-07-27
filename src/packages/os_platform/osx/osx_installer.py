@@ -59,5 +59,6 @@ def osx_installer(config_file_path):
     colors.print_blue("creating all the directories")
     # create home directory structure
     for entry in config_data["home_directory"]:
-        subprocess.call(["mkdir", "-p", entry])
+        subprocess.call(
+            ["mkdir", "-p", "{}/{}".format(pathlib.Path.home(), entry)])
     colors.print_green("successfully created all the directories")
