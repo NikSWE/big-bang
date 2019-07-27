@@ -47,6 +47,7 @@
     "firebase-tools",
     "gatsby-cli",
     "hexo-cli",
+    "marked",
     "markdown-toc",
     "serve"
   ],
